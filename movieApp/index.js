@@ -7,7 +7,7 @@ var swaggerUi = require('swagger-ui-express'),
     swaggerDocument = require('./swagger.json');
     var cors1=require('cors');
     
-   
+  
 
 let app=express();
 app.use(cors1());

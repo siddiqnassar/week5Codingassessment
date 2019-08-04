@@ -1,6 +1,7 @@
 import React from 'react';
  import User from './User';
 import Axios from 'axios';
+import {Link} from 'react-router-dom';
 //import { exportNamespaceSpecifier } from '@babel/types';
 export default  class Main extends React.Component {
     
@@ -53,7 +54,11 @@ export default  class Main extends React.Component {
     render(){
    
     return (
+
         <div className="left">
+            <div>
+                <Link className="btn-btn-primary" to="/movies/insert">AddMovies</Link>
+            </div>
             {
                 this.state.userList.map((user,index) => <User 
                                             key={index} 
